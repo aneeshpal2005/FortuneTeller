@@ -30,7 +30,9 @@ public class FortuneTellerFrame extends javax.swing.JFrame {
             "You will have a good month!",
             "You will have a good year!",
             "You will have an awesome day!",
-            "You will have an awesome week!"};
+            "You will have an awesome week!",
+            "You will have an awesome month!",
+            "You will have an awesome year!",};
 
 
 
@@ -90,9 +92,11 @@ public class FortuneTellerFrame extends javax.swing.JFrame {
         tellerIcon = new ImageIcon("tellerIcon.jpg");
         iconLabel = new JLabel(tellerIcon);
 
+        // align the icon
         iconLabel.setVerticalTextPosition(JLabel.BOTTOM);
         iconLabel.setHorizontalTextPosition(JLabel.CENTER);
 
+        // Add the label to the panel & add to main panel
         iconPanel.add(iconLabel);
         mainPanel.add(iconPanel, BorderLayout.NORTH);
     }
